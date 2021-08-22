@@ -5,13 +5,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationStackAction } from 'react-navigation';
 
 // makecomponent
+import MainPage from './src/components/MainPage';
 import SplashPage from './src/components/SplashPage';
 
 // plus
 import * as Location from 'expo-location';
 
 export default function App() {
-	return <SplashPage />;
+	return <MainPage />;
 }
 
 const styles = StyleSheet.create({

@@ -3,10 +3,11 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 
 function MainPage() {
 	return (
-		<View>
+		<View style={styles.container}>
 			<View style={styles.head}></View>
-			<View style={styles.container}>
+			<View style={styles.content}>
 				<View style={styles.map}></View>
+				<View style={styles.btn}></View>
 			</View>
 			<View style={styles.footer}></View>
 		</View>
@@ -14,19 +15,28 @@ function MainPage() {
 }
 
 const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: 'red',
+	},
 	head: {
 		flex: 1,
 		backgroundColor: 'black',
 	},
-	container: {
-		flex: 10,
-		backgroundColor: 'red',
+	content: {
+		flex: 3,
+		backgroundColor: 'orange',
 	},
 	map: {
+		flex: 2,
 		backgroundColor: 'blue',
 	},
+	btn: {
+		flex: 3,
+		backgroundColor: 'red',
+	},
 	footer: {
-		flex: 2,
+		flex: 1,
 		backgroundColor: 'gray',
 	},
 });
