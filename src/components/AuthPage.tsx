@@ -4,17 +4,17 @@ import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../common/RootStackParams';
 
-type MainPageProp = StackNavigationProp<RootStackParamList, 'Main'>;
+type AuthPageProp = StackNavigationProp<RootStackParamList, 'Auth'>;
 
-function MainPage() {
-	const navigation = useNavigation<MainPageProp>();
+function AuthPage() {
+	const navigation = useNavigation<AuthPageProp>();
 
 	return (
 		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			<Text>MainPageProp</Text>
-			<Button title='login' onPress={() => navigation.navigate('Auth')} />
+			<Text>Auth Screen</Text>
+			<Button title='login' onPress={() => navigation.navigate('Main')} />
 		</View>
 	);
 }
 
-export default MainPage;
+export default AuthPage;
