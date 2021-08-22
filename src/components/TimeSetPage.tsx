@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-function MainPage() {
+function TimeSetPage() {
 	return (
 		<View style={styles.container}>
 			<View style={styles.head}></View>
 			<View style={styles.content}>
 				<View style={styles.map}>
-					<Text>Mainpage</Text>
+					<Text>TimeSetPage</Text>
 				</View>
 				<View style={styles.btn}></View>
 			</View>
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default MainPage;
+export default TimeSetPage;
