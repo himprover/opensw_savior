@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { NavigationStackAction } from 'react-navigation';
+
 // makecomponent
 import SplashPage from './src/components/SplashPage';
 
