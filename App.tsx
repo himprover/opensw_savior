@@ -1,20 +1,24 @@
+// default
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+
+// component
+import MainPage from './src/components/MainPage';
+import AuthPage from './src/components/AuthPage';
 
 // navigation
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { RootStackParamList } from './src/common/RootStackParams';
 
-const Stack = createStackNavigator<RootStackParamList>();
+// firebase_googlelogin
+import * as firebase from 'firebase';
 
-// component
-import MainPage from './src/components/MainPage';
-import AuthPage from './src/components/AuthPage';
-
-// plus
+// expo_map
 import * as Location from 'expo-location';
+
+const Stack = createStackNavigator<RootStackParamList>();
 
 export default function App() {
 	return (
