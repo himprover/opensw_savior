@@ -1,16 +1,23 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import TEST1 from './Test1';
-import TEST2 from './Test2';
 import { MainBottomTabParamList } from '../common/MainBottomTabParams';
+
+import TimeSetPage from './TimeSetPage';
+import OotdSetPage from './OotdSetPage';
+import MapSetPage from './MapSetPage';
+import MsgSetPage from './MsgSetPage';
+import LiveTrackPage from './LiveTrackPage';
 
 const BottomTab = createBottomTabNavigator<MainBottomTabParamList>();
 
 function MainPage() {
 	return (
 		<BottomTab.Navigator>
-			<BottomTab.Screen name='TEST1' component={TEST1} />
-			<BottomTab.Screen name='TEST2' component={TEST2} />
+			<BottomTab.Screen name='TIME' component={TimeSetPage} />
+			<BottomTab.Screen name='OOTD' component={OotdSetPage} />
+			<BottomTab.Screen name='HOME' component={MainPage} />
+			<BottomTab.Screen name='MAP' component={MapSetPage} />
+			<BottomTab.Screen name='MSG' component={MsgSetPage} />
 		</BottomTab.Navigator>
 	);
 }
