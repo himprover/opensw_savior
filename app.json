@@ -21,6 +21,14 @@
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.opensw.savior",
+			"googleServicesFile": "./google-services.json",
+			"config": {
+				"googleSignIn": {
+					"certificateHash": "./firebase_info.json",
+					"_comment": "firebase_info 파일 확인 후 hash값으로 변경 필요"
+				}
 			}
 		},
 		"web": {
