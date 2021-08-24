@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
-function TimeSetPage() {
+function TimeSetPage({ navigation }) {
 	return (
 		<View style={styles.container}>
 			<View style={styles.head}></View>

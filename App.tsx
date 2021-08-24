@@ -11,6 +11,7 @@ import AuthPage from './src/components/AuthPage';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { RootStackParamList } from './src/common/RootStackParams';
+import Tabs from './src/components/Tabbar';
 
 // firebase_googlelogin
 import * as firebase from 'firebase';
@@ -23,10 +24,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 export default function App() {
 	return (
 		<NavigationContainer>
-			<Stack.Navigator>
-				<Stack.Screen name='Auth' component={AuthPage} />
-				<Stack.Screen name='Main' component={MainPage} />
-			</Stack.Navigator>
+			<Tabs />
 		</NavigationContainer>
 	);
 }
