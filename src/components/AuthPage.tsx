@@ -11,7 +11,8 @@ function AuthPage() {
 
 	return (
 		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			<Text>Auth Screen</Text>
+			<Text>구글 로그인 페이지</Text>
+			<Text>로그인 버튼 클릭 시 로그인 되었다 치고 메인으로 이동</Text>
 			<Button title='login' onPress={() => navigation.navigate('Main')} />
 		</View>
 	);
